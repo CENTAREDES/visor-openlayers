@@ -1,4 +1,5 @@
-[
+{
+  "mapas":[
   {
     "id": "hidrosur:municipios",
     "workspace":"hidrosur", 	
@@ -11,5 +12,17 @@
     "url": "/geoserver/hidrosur/wms",
     "capas":["hidrosur:municipios","hidrosur:precipitaciones_acumuladas"],
     "name": "Mapa acumuladas"
+  },
+  {
+    "id": "tiger:tiger_roads",
+    "url": "/geoserver/hidrosur/wms",
+    "capas":["tiger:tiger_roads"],
+    "name": "Mapa acumuladas"
   }
-]
+	],
+  "servicios":[
+    {"name":"WMS","url":"http://siha-geoserver.adasasistemas.com/geoserver/wms.xml"},
+    {"name":"CSW","url":"http://siha-geoserver.adasasistemas.com/geoserver/csw.xml"}
+  ]
+  
+}
